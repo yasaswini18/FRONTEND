@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Quiz Application</title>
+    <style>
+        #A13:checked ~#correct1,
+        #A21:checked ~#correct2,
+        #A34:checked ~#correct3{
+            background-color: green;
+            display: inline;
+        } 
+        #A11:checked ~#incorrect1,#A12:checked ~#incorrect1,#A14:checked ~#incorrect1,
+        #A22:checked ~#incorrect2,#A23:checked ~#incorrect2,#A24:checked ~#incorrect2,
+        #A31:checked ~#incorrect3,#A32:checked ~#incorrect3,#A33:checked ~#incorrect3{
+            background-color: red;
+            display: inline;
+        } 
+      
+    </style>
+</head>
+<body>
+    <header class="h-15 w-full text-center text-2xl  bg-black text-white">
+       QUIZ APPLICATION
+    </header>
+    <main>
+        <section>
+            <div>
+            <h2><strong>Section: HTML</strong></h2>
+            <div class="mb-8 ml-4">
+            <p>Q1.What is the latest version of HTML?</p>
+            <label class="ml-[20px]" for="A11"><strong>A. </strong>3</label><input type="radio" name="Q1" id="A11">
+            <label class="ml-[20px]" for="A12"><strong>B. </strong>4</label><input type="radio" name="Q1" id="A12">
+            <label class="ml-[20px]" for="A13"><strong>C. </strong>5</label><input type="radio" name="Q1" id="A13">
+            <label class="ml-[20px]" for="A14"><strong>D. </strong>6</label><input type="radio" name="Q1" id="A14"><br>
+            <p class="bg-green-500 hidden" id="correct1">Correct!</p>
+            <p class="bg-red-500 hidden" id="incorrect1">Incorrect!</p>
+            </div>
+             <div class="mb-8 ml-4">
+            <p>Q2.HTML is introduced in which year?</p>
+            <label class="ml-[20px]" for="A21"><strong>A. </strong>1991</label><input type="radio" name="Q2" id="A21">
+            <label class="ml-[20px]" for="A22"><strong>B. </strong>1995</label><input type="radio" name="Q2" id="A22">
+            <label class="ml-[20px]" for="A23"><strong>C. </strong>1998</label><input type="radio" name="Q2" id="A23">
+            <label class="ml-[20px]" for="A24"><strong>D. </strong>2000</label><input type="radio" name="Q2" id="A24"><br>
+            <p class="bg-green-500 hidden" id="correct2">Correct!</p>
+            <p class="bg-red-500 hidden" id="incorrect2">Incorrect!</p>
+            </div>
+             <div class="mb-8 ml-4">
+            <p>Q3.Which of the following is semantic tag?</p>
+            <label class="ml-[20px]" for="A31"><strong>A. </strong>br</label><input type="radio" name="Q1option1" id="A31">
+            <label class="ml-[20px]" for="A32"><strong>B. </strong>hr</label><input type="radio" name="Q1option1" id="A32">
+            <label class="ml-[20px]" for="A33"><strong>C. </strong>p</label><input type="radio" name="Q1option1" id="A33">
+            <label class="ml-[20px]" for="A34"><strong>D. </strong>em</label><input type="radio" name="Q1option1" id="A34"><br>
+            <p class="bg-green-500 hidden" id="correct3">Correct!</p>
+            <p class="bg-red-500 hidden" id="incorrect3">Incorrect!</p>
+            </div>
+            </div>
+        </section>
+         <section class="h-79 w-full ml-[15px] text-xl">
+            <H2><strong>Section: CSS</strong></H2>
+        </section>
+    </main>
+    <footer class="h-10 w-full text-center bg-black text-white">
+        This is footer
+    </footer>
+</body>
+</html>
