@@ -1,0 +1,51 @@
+#para1{
+    background-color: black;
+    color: antiquewhite;
+    height: 40px;
+    width: 100%;
+}
+
+#para2{
+    background-color: red;
+    color: antiquewhite;
+    height: 40px;
+    width: 100%;
+}
+
+#para3{
+    background-color: brown;
+    color: antiquewhite;
+    height: 40px;
+    width: 100%;
+}
+
+.samearticle{
+    background-color: blue;
+    color: white;
+    height: 40px ;
+    width: 100%;
+}
+
+#article1{
+    background-color: orange;
+    color: black;
+    height: 40px;
+    width: 100%;
+}
+
+article{
+    color: darkblue;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    color: brown;
+}
+
+/* #para1,#para2,.samearticle,div,span{
+    background-color: aqua;
+    color:  black;
+    width: 100%;
+    height: 40px;
+} */

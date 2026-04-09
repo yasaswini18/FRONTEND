@@ -1,0 +1,7 @@
+@import url(./class.css);
+@import url(./three.css);
+
+p{
+    background-color: brown;
+    color: black;
+}

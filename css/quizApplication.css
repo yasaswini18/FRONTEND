@@ -1,0 +1,59 @@
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #header{
+            width: 100%;
+            height: 65px;
+            text-align: center;
+            background-color: darkblue;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #footer{
+            width: 100%;
+            height: 65px;
+            background-color: black;
+            text-align: center;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #main{
+            height: 580px;
+            width: 100%;
+        }
+        label{
+            margin-left: 20px;
+        }
+        h4{
+            margin-top: 20px;
+            margin-left: 10px;
+        }
+        .correct{
+            background-color: green;
+            color: white;
+            display: none;
+        }
+        .incorrect{
+            background-color: red;
+            color: white;
+            display: none;
+        }
+        /* right answer */
+        #qns01:checked ~ #q1correct,
+        #qns02:checked ~ #q2correct,
+        #qns03:checked ~ #q3correct{
+            display: inline;
+        }
+        /* wrong answer*/
+       #qns101:checked ~ #q1wrong , #qns102:checked ~ #q1wrong,#qns103:checked ~ #q1wrong,
+       #qns201:checked ~ #q2wrong , #qns202:checked ~ #q2wrong, #qns203:checked ~ #q2wrong,
+       #qns301:checked ~ #q3wrong, #qns302:checked ~ #q3wrong,#qns303:checked ~ #q3wrong{
+            display: inline;
+        }
+
+

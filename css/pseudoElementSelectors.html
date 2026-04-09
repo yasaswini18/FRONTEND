@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Element Selectors</title>
+    <style>
+        p::first-letter{
+            color: red;
+            font-size: 60px;
+        }
+        #para1::first-line{
+            color: darkblue;
+            font-size: 40px;
+        }
+        p::before{
+            content: "😊";
+        }
+        p::after{
+            content: "❤️";
+        }
+        /* these are pseudo class selectors*/
+        ol > li:first-child{
+            color: white;
+            background-color: blue;
+        }
+        ol > li:last-child{
+            color: white;
+            background-color: blueviolet;
+        }
+        div{
+            background-color: aqua;
+        }
+        span{
+            background-color: aquamarine;
+        }
+        
+    </style>
+</head>
+<body>
+     <p id="para1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi dolore repellendus magni sed 
+        voluptatem nulla quod? Ad quaerat quia ducimus, rem nostrum nesciunt officiis! Fugiat harum maxim
+        e dolores ut numquam.</p>
+    <p>I love chai</p>
+
+    <ol>
+        <li>Iphone</li>
+        <li>Samsung</li>
+        <li>Nokia</li>
+        <li>Vivo</li>
+    </ol>
+
+    <div>
+        This is a container used with div
+    </div>
+    <span>
+        This is a container used with span
+    </span>
+</body>
+</html>

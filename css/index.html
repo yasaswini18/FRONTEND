@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ways ti add css in HTML page</title>
+    <!-- this is internal css -->
+     <style>
+        h1{
+            background-color: blue;
+            color: black !important
+        }
+
+        p{
+            background-color: blue;
+            counter-reset: green;
+        }
+     </style>
+
+    <link rel="stylesheet" href="./style.css">
+    
+</head>
+<body>
+    <!-- this is inline css-->
+    <h1 title="css" style="background-color: green; color: white;">Internal css(less priority)</h1>
+    <h2 title="css" style="background-color: red; color: white;">Inline css(high priority)</h1>
+    
+        <p>Today is saturday .(css applied from external css)</p>
+
+        <div>this is a division</div>
+
+        <span>this is a span</span>
+    
+</body>
+</html>

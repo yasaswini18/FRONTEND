@@ -1,0 +1,27 @@
+#btnExample > #btn{
+    height: 40px;
+    width: 70px;
+    background-color: black;
+    color: white;
+    padding: 3px;
+    border: 2px solid red;
+    border-radius: 10;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+#btnExample > #btn:hover{
+    height: 40px;
+    width: 70px;
+    background-color: red;
+    color: white;
+    padding: 3px;
+    border: 2px solid black;
+    border-radius: 10;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+#btnExample > #anchor:active{
+    color: green;
+}
