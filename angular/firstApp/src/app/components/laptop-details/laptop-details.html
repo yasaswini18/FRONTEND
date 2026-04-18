@@ -1,0 +1,16 @@
+<h1 style="text-align: center;">Laptop-Details</h1>
+<div id="parent">
+@for(laptop of laptopDetails ; track laptop.id)
+{
+    <div class="child">
+    <div id="imageDiv">
+    <p><img src="{{laptop.img}}" alt="internet issue"></p></div>
+    <div id="detailsDiv">
+    <p (mouseover)="brandHighlighted=!brandHighlighted" [class.highlighted]="brandHighlighted">Brand: {{laptop.brand}}</p>
+    <p (mouseenter)="priceHighlighted=true" [class.highlight]="priceHighlighted" (mouseleave)="priceHighlighted=false" [class.highlight]="priceHighlighted">Price: ₹{{laptop.price}}</p>
+    <!-- <p><button (click)="informParent()">Show details</button></p> -->
+    </div>
+    </div>
+}
+
+</div>

@@ -1,0 +1,50 @@
+
+#parent_div > .display-card-view{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center; 
+   
+} 
+.user-details{
+    background-color: aquamarine;
+    height: 200px;
+    width: 250px;
+    margin: 2px;
+    padding: 3px;
+    border: 2px solid blue;
+    border-radius: 5px;
+    text-align: center;
+}
+#table{
+    height: 150px;
+    width: 300px;
+    text-align: center;
+    border-radius: 2px;
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+tr:hover{
+    background-color: gray;
+    font-size: x-large;
+}
+
+button{
+    height: 50px;
+    width: 150px;
+    background-color: yellow;
+    border: 0;
+    border-radius: 10px;
+    gap: 10px;
+}
+#btn_div{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100px;
+    width: 100%;
+    padding: 20px;
+    gap: 20px  ;
+}
+/* #informParentDiv{
+    padding: 20px;
+} */

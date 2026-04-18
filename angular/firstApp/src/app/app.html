@@ -1,0 +1,69 @@
+<!-- <h1>{{title}}</h1>  -->
+<!-- <button (click)="changeTitle()">Click here to changes the title</button> -->
+<!-- <div id="parent_div"> -->
+<!-- <div class="user-details">
+  <p>Username: {{user.name}}</p>
+  <p>Age: {{user.age}}</p>
+  <p>Phones: {{user.phones}}</p>
+</div> -->
+<!-- 
+<div id="cont1"> 
+ @for(user of users;track user.name)
+  {
+  <div class="details" [class.bg-blue]="user.gender==='male'" [class.bg-pink]="user.gender==='female'">
+  <p>Username: {{user.name}}</p>
+  <p>Age: {{user.age}}</p>
+  <p>Address: {{user.address}}</p>
+  <p>Gender: {{user.gender}}</p>
+  <img src="{{user.pic}}" alt="some problem" style="height: 100px; width: 100px;"><br>
+  <img [src]="user.pic" alt=""> -->
+   <!-- <input type="text" disabled="{{user.edit}}">  -->
+    <!-- //only works for string data type -->
+   <!-- <input type="text" [disabled]="user.edit"><br>
+   @if(user.gender==='male')
+   {
+    <div>You are a boy</div>
+   }@else{
+    <div>You are a girl</div>
+   }  -->
+
+
+  <!-- @switch(user.gender)
+   {
+    @case('male'){<div>you are a boy</div>}
+    @case('female'){<div>you are a girl</div>}
+   } -->
+  <!-- </div> -->
+<!--  
+  }
+   </div> -->
+   <!-- <div>
+    @for(user of userDetails;track user.name){
+  <app-user-details (onupdate)="parentAction($event)" name="user.name" >
+  </app-user-details>
+}
+  </div> -->
+<!-- <app-user-details [userDetails]="userDetails" (onUpdate)="parentAction($event)">
+</app-user-details>  -->
+<!-- Two way binding-->
+ <!-- <h1>{{title}}</h1>
+ Enter the title: <input type="text" [(ngModel)]="title" name="title">
+ <h4>Date: {{date | date:'d/M/y'}} <br>
+  Currency: {{67900 | currency:'INR'}}<br>
+  Time: {{date | date:'shortTime'}}<br>
+  FullDate: {{date | date:'fullDate'}}
+</h4>
+<button (click)="showPrevious()" [disabled]="start==0">prev</button>
+<button (click)="showNext()" [disabled]="start+pageSize>=laptopDetails.length">Next</button> -->
+
+
+
+
+
+
+
+
+<app-customer-list></app-customer-list>
+  <!-- <app-laptop-details [laptopDetails]="laptops"></app-laptop-details> -->
+  <router-outlet >
+  </router-outlet>

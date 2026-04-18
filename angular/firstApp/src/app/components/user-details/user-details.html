@@ -1,0 +1,62 @@
+<div id="parent_div">
+<div class="user-details">
+    <div>
+        Name: {{name}}
+    </div>
+    <div>
+        Age: {{age}}
+    </div>
+    <div>
+        Address: {{address}}
+    </div>
+    <div>
+        Gender: {{gender}}
+    </div>
+    <button (click)="informParent()">Inform the parent</button>
+
+</div>
+<div id="btn_div">
+  <button (click)="displayCardView()">Display in Card View</button><br><br>
+  <button (click)="displayListView()">Display in List View</button>
+  </div>
+  <div class="display-card-view">
+@if(isCardView)
+{
+  @for(userDetail of userDetails;track userDetail.name)
+    {
+      <div  class="user-details">
+        <p>Name: {{userDetail.name}}</p>
+        <p>Age: {{userDetail.age}}</p>
+        <p>Address: {{userDetail.address}}</p>
+        <p>Gender: {{userDetail.gender}}</p>
+      </div>
+    }
+}@if(isListView){
+    <table id="table" border="1">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Address</th>
+            <th>Gender</th>
+        </tr>
+    @for(userDetail of userDetails;track userDetail.name)
+    {
+     <tr>
+       <td>{{userDetail.name}}</td>
+        <td>{{userDetail.age}} </td>
+       <td>{{userDetail.address}}</td>
+      @if(userDetail.gender=='male'){
+        <td class="bg-blue">{{userDetail.gender}}</td>
+      }@else{
+        <td class="bg-pink">{{userDetail.gender}}</td>
+      }
+     </tr>
+    } 
+    </table>
+}
+
+</div>
+
+<div id="informParentDiv">
+</div>
+</div>

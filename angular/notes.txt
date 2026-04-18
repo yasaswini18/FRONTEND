@@ -1,0 +1,19 @@
+1. It is a javaScript framework
+2. Open-source, client side typeScript
+
+single page application - doesnt load every time it only changes the content in the main section
+
+@Component - the object will be created by angular
+every component is associated with the html template and the meta data
+
+PROPERTY BINIDNG AND EVENT BINDING
+Property Binding:
+CHANGES IN Component will be updated in html template
+Event Binding:
+changes in html component will be updated at component
+
+directive{} - additional event bindings - can also tell whether the html element to show up or not
+
+Tree of Components
+root -{ header,side-bar,main,footer}
+

@@ -1,0 +1,38 @@
+#parent{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    /* align-content: center; */
+    height: 570px;
+    width: 100%;
+}
+.child{
+    height:400px;
+    width:300px;
+    background-color: rgb(185, 187, 187);
+    text-align: center;
+    border-radius: 10px;
+    /* padding: 20px; */
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: 0.3s;
+}
+.child:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+img{
+    height: 250px;
+    width: 280px;
+}
+
+.highlighted{
+    background-color: beige;
+}
+.highlight{
+    background-color: white;
+}

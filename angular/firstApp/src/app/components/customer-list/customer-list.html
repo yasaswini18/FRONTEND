@@ -1,0 +1,14 @@
+<h1>Customer-List</h1>
+Enter Name: <input type="text" [(ngModel)]="customer" (input)="showCustomers()" ><br><br>
+<button (click)="previous()" [disabled]="start+pageSize<=3">Prev</button>
+<button (click)="next()" [disabled]="start>=customers.length">Next</button>
+<div id="allDetails">
+@for(customer of displayCustomer; track customer.id)
+{
+    <div id="customerDetails">
+        <p>Name: {{customer.name}}</p>
+        <p>Address: {{customer.address}}</p>
+        <p>Email: {{customer.email}}</p>
+    </div>
+}
+</div>

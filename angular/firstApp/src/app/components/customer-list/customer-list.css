@@ -1,0 +1,17 @@
+#allDetails{
+    height: 580px;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+#customerDetails{
+    height: 200px;
+    width: 300px;
+    background-color: rgb(198, 195, 195);
+    border-radius: 15px;
+    text-align: center;
+    margin: 10px;
+    padding-top: 15px;
+}
